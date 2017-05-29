@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CFEAB97B-B363-488E-9210-87FB490EB0CB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FirstWebProject</RootNamespace>
+    <AssemblyName>FirstWebProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddRecord.aspx" />
+    <Content Include="Libs\bootstrap-3-typeahead\4.0.2\bootstrap3-typeahead.js" />
+    <Content Include="Libs\bootstrap-3-typeahead\4.0.2\bootstrap3-typeahead.min.js" />
+    <Content Include="Libs\bootstrap\3.3.7\css\bootstrap-theme.css" />
+    <Content Include="Libs\bootstrap\3.3.7\css\bootstrap-theme.min.css" />
+    <Content Include="Libs\bootstrap\3.3.7\css\bootstrap.css" />
+    <Content Include="Libs\bootstrap\3.3.7\css\bootstrap.min.css" />
+    <Content Include="Libs\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Libs\bootstrap\3.3.7\js\bootstrap.js" />
+    <Content Include="Libs\bootstrap\3.3.7\js\bootstrap.min.js" />
+    <Content Include="Libs\bootstrap\3.3.7\js\npm.js" />
+    <Content Include="Libs\icheck\1.0.2\icheck.js" />
+    <Content Include="Libs\icheck\1.0.2\icheck.min.js" />
+    <Content Include="Libs\icheck\1.0.2\skins\all.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\aero%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\aero.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\aero.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\blue%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\blue.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\blue.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\flat%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\flat.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\flat.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\green%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\green.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\green.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\grey%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\grey.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\grey.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\orange%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\orange.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\orange.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\pink%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\pink.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\pink.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\purple%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\purple.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\purple.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\red%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\red.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\red.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\yellow%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\yellow.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\yellow.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\flat\_all.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\futurico\futurico%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\futurico\futurico.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\futurico\futurico.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\line\aero.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\line\blue.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\line\green.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\line\grey.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\line\line%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\line\line.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\line\line.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\line\orange.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\line\pink.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\line\purple.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\line\red.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\line\yellow.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\line\_all.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\aero%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\aero.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\aero.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\blue%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\blue.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\blue.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\green%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\green.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\green.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\grey%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\grey.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\grey.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\minimal%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\minimal.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\minimal.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\orange%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\orange.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\orange.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\pink%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\pink.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\pink.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\purple%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\purple.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\purple.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\red%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\red.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\red.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\yellow%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\yellow.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\yellow.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\minimal\_all.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\polaris\polaris%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\polaris\polaris.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\polaris\polaris.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\aero%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\aero.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\aero.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\blue%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\blue.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\blue.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\green%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\green.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\green.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\grey%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\grey.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\grey.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\orange%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\orange.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\orange.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\pink%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\pink.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\pink.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\purple%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\purple.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\purple.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\red%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\red.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\red.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\square%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\square.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\square.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\yellow%402x.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\yellow.css" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\yellow.png" />
+    <Content Include="Libs\icheck\1.0.2\skins\square\_all.css" />
+    <Content Include="Libs\jquery\1.12.4\jquery.min.js" />
+    <Content Include="Libs\jquery\1.9.1\jquery.min.js" />
+    <Content Include="Libs\select2\4.0.3\css\select2.css" />
+    <Content Include="Libs\select2\4.0.3\css\select2.min.css" />
+    <Content Include="Libs\select2\4.0.3\css\theme\0.1.0-beta.10\select2-bootstrap.css" />
+    <Content Include="Libs\select2\4.0.3\css\theme\0.1.0-beta.10\select2-bootstrap.min.css" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\ar.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\az.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\bg.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\ca.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\cs.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\da.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\de.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\el.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\en.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\es.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\et.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\eu.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\fa.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\fi.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\fr.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\gl.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\he.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\hi.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\hr.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\hu.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\id.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\is.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\it.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\ja.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\km.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\ko.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\lt.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\lv.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\mk.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\ms.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\nb.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\nl.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\pl.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\pt-BR.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\pt.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\ro.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\ru.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\sk.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\sr-Cyrl.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\sr.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\sv.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\th.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\tr.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\uk.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\vi.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\zh-CN.js" />
+    <Content Include="Libs\select2\4.0.3\js\i18n\zh-TW.js" />
+    <Content Include="Libs\select2\4.0.3\js\select2.full.js" />
+    <Content Include="Libs\select2\4.0.3\js\select2.full.min.js" />
+    <Content Include="Libs\select2\4.0.3\js\select2.js" />
+    <Content Include="Libs\select2\4.0.3\js\select2.min.js" />
+    <Content Include="Index.aspx" />
+    <Content Include="SaveRecord.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddRecord.aspx.cs">
+      <DependentUpon>AddRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddRecord.aspx.designer.cs">
+      <DependentUpon>AddRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SaveRecord.aspx.cs">
+      <DependentUpon>SaveRecord.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SaveRecord.aspx.designer.cs">
+      <DependentUpon>SaveRecord.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utility\DbHelperSQL.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\DropDownListUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Libs\bootstrap\3.3.7\css\bootstrap-theme.css.map" />
+    <Content Include="Libs\bootstrap\3.3.7\css\bootstrap-theme.min.css.map" />
+    <Content Include="Libs\bootstrap\3.3.7\css\bootstrap.css.map" />
+    <Content Include="Libs\bootstrap\3.3.7\css\bootstrap.min.css.map" />
+    <Content Include="Libs\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Libs\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Libs\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Libs\bootstrap\3.3.7\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Content\" />
+    <Folder Include="Images\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:50010/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

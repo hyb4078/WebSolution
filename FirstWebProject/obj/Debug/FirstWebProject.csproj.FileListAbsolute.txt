@@ -1,0 +1,12 @@
+E:\C#\Projects\WebSolution\FirstWebProject\bin\FirstWebProject.dll
+E:\C#\Projects\WebSolution\FirstWebProject\bin\FirstWebProject.pdb
+E:\C#\Projects\WebSolution\FirstWebProject\obj\Debug\FirstWebProject.csprojResolveAssemblyReference.cache
+E:\C#\Projects\WebSolution\FirstWebProject\obj\Debug\FirstWebProject.dll
+E:\C#\Projects\WebSolution\FirstWebProject\obj\Debug\FirstWebProject.pdb
+E:\C#\Projects\WebSolution\FirstWebProject\bin\Common.dll
+E:\C#\Projects\WebSolution\FirstWebProject\bin\Common.pdb
+E:\C#\WebSolution\FirstWebProject\bin\FirstWebProject.dll
+E:\C#\WebSolution\FirstWebProject\bin\FirstWebProject.pdb
+E:\C#\WebSolution\FirstWebProject\obj\Debug\FirstWebProject.csprojResolveAssemblyReference.cache
+E:\C#\WebSolution\FirstWebProject\obj\Debug\FirstWebProject.dll
+E:\C#\WebSolution\FirstWebProject\obj\Debug\FirstWebProject.pdb
